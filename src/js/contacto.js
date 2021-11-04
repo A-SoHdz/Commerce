@@ -14,11 +14,13 @@ form.addEventListener("submit",function(e){
     console.log("enviado");
 
     Email.send({
-        SecureToken : "fc1e6f88-3a36-4dd6-b47d-378c1960db2f",
-        To : "rockietess@gmail.com",
-        From : "rockietess@gmail.com",
+        Host : "smtp.elasticemail.com",
+        Username : "carlostrejo182@gmail.com",
+        Password : "CEE868D15EBDAA1830EFDE0D2589DEB74A8B",
+        To : 'carlostrejo182@gmail.com',
+        From : "carlostrejo182@gmail.com",
         Subject : "This is the subject",
-        Body : `Hola soy ${nme} mi correo es ${email} \n ${message} \n mi telefono es ${phone}`
+        Body : `Hola soy ${nme.value} mi correo es ${email.value} \n ${message.value} \n mi telefono es ${phone.value}`
     }).then(
       message => alert(message)
     );
