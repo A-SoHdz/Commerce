@@ -14,7 +14,7 @@ form.addEventListener("submit",function(e){
     
     /* parseamos el dato phone a number */
     let phone_number=parseInt(phone.value,10);
-
+   
     if(nme.value.length == 0){/* validacion del campo nombre */
         
     alert("No puede estar el campo nombre vacio");
