@@ -31,12 +31,13 @@
     <section class="contact-clean">
         <form  method="post"id="contact-form"  >
             <h2 class="text-center">Contacto</h2>
-            <div class="mb-3"><input id="name" class="form-control" type="text" name="name" placeholder="Nombre"></div>
-            <div class="mb-3"><input id="email" class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small><input id="phone" class="form-control" type="tel" name="teléfono" placeholder="Teléfono"></div>
+            <div class="mb-3"><input id="name" class="form-control" type="text" pattern="[a-zA-Z'-'\s]*" name="name" placeholder="Nombre"></div>
+            <div class="mb-3"><input id="email" class="form-control" type="email" name="email" placeholder="Correo electrónico"><small class="form-text text-danger">Por favor introduzca su correo electrónico.</small><input id="phone" class="form-control" type="number" name="teléfono" placeholder="Teléfono"></div>
             <div class="mb-3"><textarea id="message" class="form-control" name="message" placeholder="Mensaje" rows="14"></textarea></div>
             <div class="mb-3"><button id="btnSend"class="btn btn-primary" type="submit">ENVIAR</button></div>
         </form> <!-- form-contact -->
     </section> <!-- contact-clean -->
+
 
     <footer class="footer-basic">
         <div class="social"><a href="https://www.instagram.com/tremendamexa/"><i class="icon ion-social-instagram"></i></a><a href="https://www.facebook.com/tremendaMexa"><i class="icon ion-social-facebook"></i></a></div>
