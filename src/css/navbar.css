@@ -1,0 +1,28 @@
+
+
+#uno{
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #c18764;
+    font-weight: bold;
+    color: black;
+}
+#dos{
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 18px;
+    background-color: #c18764;
+    color: black;
+    font-weight: bold;
+
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand{
+    font-weight: bold;
+}

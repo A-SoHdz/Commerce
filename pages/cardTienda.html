@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Card</title>
     <link rel="stylesheet" href="./../src/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: #e9d4c7;">
-        <div class="container"><img src="./../src/images/logoTremenda.png"><a class="navbar-brand" >Tremenda Mexa</a> <a href="./index.html"></a><button data-bs-toggle="collapse"class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactoForm.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./cardTienda.html">Productos</a></li>
-                     <li class="nav-item"><a class="nav-link" href="./acercaDeNosotros.html">Nosotros</a></li>
-                
-                </ul>
-                <ul class="navbar-nav me-auto">
-                    <li href="#"></a><span class="navbar-text actions"> <a class="login" href="./pages/logIn.html">Inicio de sesión</a></li>
-                     <li class="btn btn-dark" style="border-radius: 20px" role="button"> <a href="./registro.html" style="text-decoration: none;color: aliceblue;">Registro</span></a></li>
-              </ul>
-            </div>
-        
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e9d4c7;">
+        <a class="navbar-brand" href="#">
+            <img src="./../src/images/logoTremenda.png" width="60" height="60" alt="">
+        </a>
+        <a class="navbar-brand" href="#">TremendaMexa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./../index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./contactoForm.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cardTienda.html">Productos</a></li>
+             <li class="nav-item"><a class="nav-link" href="./acercaDeNosotros.html">Nosotros</a></li>
+          </ul>
+          <a href="./logIn.html"><button type="button" class="btn btn-light" id="uno">Iniciar Sesión</button></a>
+          <a href="./registro.html"><button type="button" class="btn btn-dark" id="dos">Registrar</button></a>
         </div>
-
-    </nav>
+      </nav><!--navbar-->
     <div class="card" style="width: 21rem;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;box-shadow: 2px 2px 16px 8px rgba(0,0,0,0.1);min-width: 300px;border-style: none;max-width: 100%;margin: 16px;">
-        <div style="width: 100%;height: 230px;background: url(&quot;./../src/images/Mariana%20Souza%20Reis.jpeg&quot;) center / cover;border-top-left-radius: 20px;border-top-right-radius: 20px;position: relative;">
+        <div style="width: 100%;height: 230px;background: url(&quot;./../src/images/bolsa\ tremenda\ mexa.png) center / cover;border-top-left-radius: 20px;border-top-right-radius: 20px;position: relative;">
             <div class="d-flex flex-row justify-content-center align-items-center" style="border-radius: 39px;width: 60px;height: 60px;position: absolute;bottom: -31px;right: 20px;"><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="border-style: none;background: #b86868;width: 60px;height: 60px;border-radius: 39px;box-shadow: 2px 2px 20px -1px #757575;" data-bs-toggle="modal" data-bs-target="#modal_image"><i class="fas fa-photo-video" style="color: rgb(255,255,255);font-size: 20px;"></i></button>
                 <div class="modal fade" role="dialog" tabindex="-1" id="modal_image" aria-labelledby="exampleModalLabel" style="margin-top: 16vh;">
                     <div class="modal-dialog" role="document">
@@ -42,9 +44,9 @@
                             <div class="modal-body">
                                 <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active"><img class="w-100 d-block" src="./../src/images/Mariana%20Souza%20Reis.jpeg" alt="Slide Image"></div>
-                                        <div class="carousel-item"><img class="w-100 d-block" src="./../src/images/pexels-karolina-grabowska-4219614.jpg" alt="Slide Image"></div>
-                                        <div class="carousel-item"><img class="w-100 d-block" src="./../src/images/Tia lê.jpg" alt="Slide Image"></div>
+                                        <div class="carousel-item active"><img class="w-100 d-block" src="./../src/images/mandil tremenda mexa.png" alt="Slide Image"></div>
+                                        <div class="carousel-item"><img class="w-100 d-block" src="./../src/images/tx13.png" alt="Slide Image"></div>
+                                        <div class="carousel-item"><img class="w-100 d-block" src="./../src/images/tx11.png" alt="Slide Image"></div>
                                     </div>
                                     <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
                                     <ol class="carousel-indicators">
@@ -79,9 +81,9 @@
         </ul>
         <p class="copyright">Company Tremenda Mexa© 2021</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 
 </html>
