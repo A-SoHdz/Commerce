@@ -19,6 +19,26 @@
 @import url('./../fonts/font-awesome.min.css');
 @import url('./../fonts/ionicons.min.css');
 
+/*/body section{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+*/
+#container1 {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center
 
+   
+    
+
+    
+
+}
+#container2{
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
 
 

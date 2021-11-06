@@ -4,94 +4,104 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>La Tremenda Mexa</title> 
-    <link rel="stylesheet" href="./src/css/main.css"> 
+  
+
+    <title>La Tremenda Mexa</title>
+  <link rel="stylesheet" href="./src/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: #e9d4c7;">
-        <div class="container"><img src="./src/images/logoTremenda.png"><a class="navbar-brand" href="#">Tremenda Mexa</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><img src="./src/images/logoTremenda.png"><a class="navbar-brand" >Tremenda Mexa</a> <a href="./index.html"></a><button data-bs-toggle="collapse"class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Productos</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Nosotros</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li>
-                </ul><a href="#"></a><span class="navbar-text actions"> <a class="login" href="#">Log In</a><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></span>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contactoForm.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/cardTienda.html">Productos</a></li>
+                     <li class="nav-item"><a class="nav-link" href="./pages/acercaDeNosotros.html">Nosotros</a></li>
+                
+                </ul>
+                <ul class="navbar-nav me-auto">
+                    <li href="#"><span class="navbar-text actions"> <a class="login" href="./pages/logIn.html">Inicio de sesión</a></li>
+                    <li class="btn btn-dark" style="border-radius: 20px" role="button"> <a href="./pages/registro.html" style="text-decoration: none;color: aliceblue;">Registro</span></a></li>
+              </ul>
             </div>
+        <a ></a>
         </div>
-    </nav><img src="./src/images/tremendaMexa.jpg">
-    <section class="article-list">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Productos</h2>
-                <p class="text-center">Algunos de nuestros productos</p>
-            </div>
-            <div class="row articles">
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="./src/images/desk.jpg"></a>
-                    <h3 class="name">Bolsas</h3>
-                    <p class="description">Bolsas hechas con amor 100% artesanales</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+
+    </nav>
+    
+    <section id="container1"><!-- container1 -->
+        <br>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"><!-- carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./src/images/tx11.png"   class="d-block w-100" height="700px">
                 </div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="./src/images/building.jpg"></a>
-                    <h3 class="name">Mandiles</h3>
-                    <p class="description">Mandiles personalizados&nbsp;</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+                <div class="carousel-item">
+                    <img src="./src/images/Tremenda MEXA Images/bolsas 2.png"  class="d-block w-100" height="700px">
                 </div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="./src/images/loft.jpg"></a>
-                    <h3 class="name">Café</h3>
-                    <p class="description">Café con un sabor %100 artesanal</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+                <div class="carousel-item">
+                    <img src="./src/images/Tremenda MEXA Images/modelo 1 mandil.png"   class="d-block w-100" height="700px">
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="photo-gallery"></section>
-    <section class="team-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Clientes</h2>
-                <p class="text-center">Nuestros clientes opinan acerca de nuestros productos</p>
-            </div>
-            <div class="row people">
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="./src/images/1.jpg">
-                    <h3 class="name">Ben Johnson</h3>
-                    <p class="title">Musician</p>
-                    <p class="description">Me encantan sus productos</p>
-                    <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
-                </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="./src/images/2.jpg">
-                    <h3 class="name">Emily Clark</h3>
-                    <p class="title">Artist</p>
-                    <p class="description">Sus mandiles personalizados están increíbles</p>
-                    <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
-                </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="./src/images/3.jpg">
-                    <h3 class="name">Carl Kent</h3>
-                    <p class="title">Stylist</p>
-                    <p class="description">El mejor café artesanal que he probado</p>
-                    <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="photo-gallery">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Galería</h2>
-            </div>
-            <div class="row photos" data-bss-baguettebox="">
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./src/images/desk.jpg"><img class="img-fluid" src="./src/images/desk.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./src/images/building.jpg"><img class="img-fluid" src="./src/images/building.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./src/images/loft.jpg"><img class="img-fluid" src="./src/images/loft.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./src/images/building.jpg"><img class="img-fluid" src="./src/images/building.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./src/images/loft.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./src/images/desk.jpg"></a></div>
-            </div>
-        </div>
-    </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button><!-- button -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button><!-- button -->
+        </div><!-- carousel -->
+    </section><!-- container1 -->
+    <section id="container2"><!-- container2 -->
+        <center>
+            
+            <h2>Productos</h2>
+            <br>
+            <p>Algunos de nuestros Productos</p>
+        </center><!-- center -->
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./src/images/bolsa tremenda mexa.png" class="card-img-top" alt="..." height="286px">
+                    <div class="card-body">
+                      <h5 class="card-title">Bolsas</h5>
+                      <p class="card-text">Bolsas hechas con amor 100% artesanales</p>
+                      <center>
+                        <a href="#" class="btn btn-primary"><i class="bi bi-arrow-right-circle"></i></a>
+                      </center>
+                    </div>
+                </div><!-- card -->
+            </div><!-- col -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./src/images/mandil tremenda mexa.png" class="card-img-top" alt="..." height="286px">
+                    <div class="card-body">
+                      <h5 class="card-title">Mandiles</h5>
+                      <p class="card-text">Mandiles personalizados</p>
+                      <center>
+                        <a href="#" class="btn btn-primary"><i class="bi bi-arrow-right-circle"></i></a>
+                      </center>
+                    </div>
+                </div><!-- card -->
+            </div><!-- col -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./src/images/cafe tremenda mexa.jpg" class="card-img-top" alt="..." height="286px">
+                    <div class="card-body">
+                      <h5 class="card-title">Café</h5>
+                      <p class="card-text">Café con un sabor %100 artesanal.</p>
+                      <center>
+                        <a href="#" class="btn btn-primary"><i class="bi bi-arrow-right-circle"></i></a>
+                      </center>
+                    </div>
+                </div><!-- card -->
+            </div><!-- col -->
+        </div><!-- row -->
+    </section><!-- container2 -->
     <footer class="footer-basic">
         <div class="social"><a href="https://www.instagram.com/tremendamexa/"><i class="icon ion-social-instagram"></i></a><a href="https://www.facebook.com/tremendaMexa"><i class="icon ion-social-facebook"></i></a></div>
         <ul class="list-inline">
