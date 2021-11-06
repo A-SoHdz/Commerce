@@ -82,6 +82,9 @@
   margin-right: auto;
 
 }
+.team-boxed .container .row .description {
+  text-align:start;
+}
 
 .team-boxed .social {
   font-size: 33px;
@@ -102,18 +105,30 @@
   animation-duration: 6s;
   animation-name:slidein;
 }
-.team-boxed .container .intro p{
-  /* animation-name: moveInLeft; */
-  
-  animation-direction: alternate;
-  animation-duration: 10s;
-  /* font-size: 3.2em; */
+.team-boxed .container .intro p {
+  animation-name:animTexto; 
+  animation-duration: 6s;
+  animation-delay:1.5s;
+
+}
+@keyframes animTexto {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
-  @keyframes slidein {
+
+
+
+  /* @keyframes slidein {
    
   from {
-    scroll-margin-right: 100%;
+    right:0rem;
     width: 200%
   }
 
@@ -121,7 +136,7 @@
     margin-left: 0%;
     width: 100%;
   }
-}
+} */
 
 /*  @keyframes moveInLeft{
   0%{
