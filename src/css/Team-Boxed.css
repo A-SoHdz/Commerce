@@ -76,7 +76,11 @@
 }
 
 .team-boxed .item img {
-  max-width: 320px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .team-boxed .social {
@@ -92,7 +96,7 @@
 }
 
 .team-boxed .social a:hover {
-  opacity:-1;
+  opacity: 60%;
 }
 .team-boxed .container .intro p {
   animation-duration: 6s;
