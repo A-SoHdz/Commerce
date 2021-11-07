@@ -8,64 +8,71 @@ form.addEventListener("submit",function(e){
 
     e.preventDefault();
     let nme = document.getElementById("name");
-    let email = document.getElementById("email").value;
+    let email = document.getElementById("email");
     let phone = document.getElementById("phone");
     let message = document.getElementById("message");
-    
     /* parseamos el dato phone a number */
     let phone_number=parseInt(phone.value,10);
-   
-    if(nme.value.length == 0){/* validacion del campo nombre */
-        
-    alert("No puede estar el campo nombre vacio");
+    
+    /* validacion del campo nombre */
+    if(nme.value.length == 0){
+        /* para validar que no este vacío el campo nombre */
+        alertModal("El campo nombre no puede quedar vacío");
 
     }else{
 
-        if(email.length <= 8 ){/* validación del campo email */
+        /* validación del campo email */
+        if(email.value.length <= 8 ){
             /* Para validar si el email es corto */
-            alert("No cumple con el mínimo de los caractéres posibles el campo Correo electrónico (mínimo = 8)");
-        }else if(email.length >=40){
+            email.classList.add("is-invalid");
+            alertModal("Tu correo necesíta al menos 8 carácteres para ser válido");
+            email.value = "";
+
+        }else if(email.value.length >=40){
             /* Para validar si el email es demasiado largo*/
-            alert("Excedio el máximo de caractéres posibles el campo Correo electrónico(máximo = 40)");
+            email.classList.add("is-invalid");
+            alertModal("Tu correo excede el máximo de  40 carácteres para ser válido");
+            email.value = "";
 
+        }else if(email.value.length == 0){
+             /* para validar que no este vacío el campo email */
+            alertModal("El campo correo electrónico no puede quedar vacío");
+        
         }else{
-            
 
-            if(phone.value.length<10 || phone_number <= 0 || phone.value.length >=11){/* validaciones del campo telefono */
+            /* validaciones del campo telefono */
+            if(phone.value.length<10 || phone_number <= 0 || phone.value.length >=11){
+                /* Validar los 10 digitos del valor del campo teléfono */
                 phone.classList.add("is-invalid");
-                alert("Número de teléfono erróneo, verifica tu número.");
+                alertModal("Número de teléfono erróneo, verifica tu número");
+                phone.value = "";
+
             }else if(isNaN(phone.value)){
+                /* validar que no ingresen letras en el campo teléfono */
                 phone.classList.add("is-invalid");
-                alert("No ingresar palabras en el campo de teléfono.");
-            }else{
-                
+                alertModal("No ingresar palabras en el campo de teléfono");
 
-                if(phone.value.length<10 || phone_number <= 0 || phone.value.length >=11){/* validaciones del campo telefono */
-       
-                    phone.classList.add("is-invalid");
-                    alert("Número de teléfono erróneo, verifica tu número.");
-                }else if(isNaN(phone.value)){
-                    phone.classList.add("is-invalid");
-                    alert("No ingresar palabras en el campo de teléfono.");
-                }else{
+            /* Validaciones del campo message */
+            }else{
                     
                     if(message.value.length == 0 || message.value.length <20){
-       
-                        alert("El campo texto necesita al menos 20 caracteres");
+                        /* Validar el mínimo de caracteres del campo message */
+                        alertModal("El campo texto necesita al menos 20 caracteres");
                     }else{
-                        
+                        /* función para mandar el email */
                         sendEmail(nme,email,message,phone);
-                    }
+                    }/* sendEmail */
 
-                }
+                }/* phone.values */
 
-            }
+            }/* email.values */
 
-        }
+        }/* nme.values */
+        
 
-    } 
+});/* form.addEventListener */
     
-}); 
+
 
 function sendEmail(nme,email,message,phone){
     Email.send({
@@ -75,9 +82,37 @@ function sendEmail(nme,email,message,phone){
         To : 'carlostrejo182@gmail.com',
         From : "carlostrejo182@gmail.com",
         Subject : "This is the subject",
-        Body : `Hola soy ${nme.value} mi correo es ${email.value} \n ${message.value} \n mi telefono es ${phone.value}`
+        Body : `Hola soy ${nme.value} mi correo es ${email.value} ${message.value} mi telefono es ${phone.value}`
     }).then(
-      message => alert(`Datos enviados satisfactoriamente.`)
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Tus datos han sido enviados satisfactoriamente.',
+            showConfirmButton: false,
+            timer: 1500
+          })
+          
     );
+    clearInputs(nme,email,message,phone);
 
-}
+}/* function sendEmail */
+
+function alertModal(text){
+    Swal.fire({
+        title: 'Alerta',
+        text: `¡${text}!`,
+        icon: 'warning',
+        cancelButtonColor: '#d33',
+        cancelButtonText: "Okay"
+        
+      })
+}/* function alertModal */
+
+function clearInputs(nme,email,message,phone){
+    nme.value = "";
+    email.value = "";
+    message.value = "";
+    phone.value = "";
+    email.classList.remove("is-invalid");
+    phone.classList.remove("is-invalid");
+}/* function clearInputs */
