@@ -1,0 +1,25 @@
+{
+  "name": "commerce",
+  "version": "1.0.0",
+  "description": "tremenda mexa ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-SoHdz/Commerce.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "\u001b[3~Rookies squad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A-SoHdz/Commerce/issues"
+  },
+  "homepage": "https://github.com/A-SoHdz/Commerce#readme",
+  "dependencies": {
+    "sweetalert2": "^11.1.9"
+  }
+}
