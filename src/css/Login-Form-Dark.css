@@ -1,14 +1,14 @@
-.login-dark {
+ .login-dark {
   height: 700px;
-  background: whitesmoke  /*url(../../assets/img/star-sky.jpg)*/;
+  background: #efe1d8
   background-size: cover;
   position: relative;
 }
 
 .login-dark form {
   max-width: 400px;
-  width: 90%;
-  background-color:#efe1d8; /* #1e2833; */
+  width: 100%;
+  background-color:white;
   padding: 40px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
@@ -69,4 +69,3 @@
 .login-dark form .btn-primary:active {
   transform: translateY(1px);
 }
-

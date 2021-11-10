@@ -1,6 +1,23 @@
 
-
-#uno{
+.navbar-light .navbar-collapse .btn-outline-light{
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #c18764;
+    font-weight: bold;
+    color: black;
+}
+.navbar-light .navbar-collapse .btn-outline-dark{
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 18px;
+    background-color: #c18764;
+    color: black;
+    font-weight: bold;
+}
+.navbar-light .navbar-collapse .btn:not(:disabled):not(.disabled){
+    cursor: pointer;
+}
+/* #uno{
     border-radius: 20px;
     margin: 5px;
     background-color: #c18764;
@@ -15,7 +32,7 @@
     color: black;
     font-weight: bold;
 
-}
+} */
 
 .navbar-collapse .navbar-nav .nav-item .nav-link{
     padding-left: 25px;

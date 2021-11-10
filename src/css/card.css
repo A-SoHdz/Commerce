@@ -1,0 +1,13 @@
+.g-4 .col .h-100 .card-img-top{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+}
+.g-4 .col .h-100{
+    margin-top: 15px;
+}
+.g-4 .col{
+    margin-bottom: 15px;
+}
