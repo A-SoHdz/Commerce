@@ -3,35 +3,8 @@ body{
     background-color: #e9d4c7;
 }
 
- #conteiner-back {
-   
-    background-image: url(../images/tx3.png);
-    /* background-repeat: no-repeat;
-    background-size:contain; */
-   
-    /* background-position: 10px;
-    background-position-x: left 0px;
-    background-position-y: 300px; */
-    
-    padding: 20px 50px 20px 50px;
-    
-}
-#conteiner-back image{
-    width: 160px;
-}
-#conteiner-back .text-center{
-     background-color: #ffffff10;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(12px);
-    padding: 120px;
-    font-size: 110px;
-    color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-/* #list-products{
-    padding-top: 150px;
-} */
-.text{
-    padding: 10px 40px 10px 60px;
+  .container .row .text #pad{
+    text-align: center;
     font-size: 40px;
-}
+    padding-left: 100px;
+}   
