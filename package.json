@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/A-SoHdz/Commerce#readme",
   "dependencies": {
-    "sweetalert2": "^11.1.9"
+    "sweetalert2": "^11.1.10"
   }
 }

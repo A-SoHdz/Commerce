@@ -1,0 +1,10 @@
+
+body{
+    background-color: #e9d4c7;
+}
+
+  .container .row .text #pad{
+    text-align: center;
+    font-size: 40px;
+    padding-left: 100px;
+}   
